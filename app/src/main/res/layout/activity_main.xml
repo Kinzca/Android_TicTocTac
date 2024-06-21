@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="311dp"
+        android:src="@drawable/title"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOneGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageButton
+            android:id="@+id/oneGame"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:src="@drawable/one"
+            android:background="?android:attr/selectableItemBackground" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEndlessGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardOneGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageButton
+            android:id="@+id/endlessGame"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:src="@drawable/endless"
+            android:background="?android:attr/selectableItemBackground" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/edit_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardEndlessGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageButton
+            android:id="@+id/quitGame"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:src="@drawable/quit"
+            android:background="?android:attr/selectableItemBackground" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
